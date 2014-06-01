@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppyLinks.LinkItemView"
+    x:Name="LinkView">
+    <ContentPage.Content>
+        <WebView x:Name="LinkBrowser">
+        	<WebView.Source>
+        		<UrlWebViewSource Url="http://www.google.com"></UrlWebViewSource>
+        	</WebView.Source>
+        </WebView>
+    </ContentPage.Content>
+</ContentPage>
+

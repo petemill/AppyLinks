@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppyLinks.AuthorizationView">
+    <ContentPage.Content>
+        <StackLayout x:Name="MainViewLayout" Orientation="Vertical" VerticalOptions="LayoutOptions.Center" Spacing="20" Padding="50">
+        	<Image x:Name="Logo"></Image>
+        	<Entry Placeholder="Github username" x:Name="GithubUsername" />
+        	<Entry Placeholder="Github password" IsPassword="True" x:Name="GithubPassword" />
+        	<Button Text="Login with Github" TextColor="White" BackgroundColor="Black" x:Name="GithubLoginUserAction" />
+        	<ActivityIndicator x:Name="AuthenticationInProgressIndicator" Color="Black" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppyLinks.LinkList"
+    Title="Links"
+    >
+    <StackLayout Orientation="Vertical">
+        <ActivityIndicator x:Name="listFetchingActivity" IsRunning="false" IsVisible="false"></ActivityIndicator>
+		<ListView x:Name="urlView"
+		IsVisible="true"
+		ItemSelected="ItemSelected">
+
+	    <ListView.ItemTemplate>
+	      <DataTemplate>
+
+	         
+	          	<TextCell Text="{Binding Title}" />
+
+	         
+
+	      </DataTemplate>
+	    </ListView.ItemTemplate>
+	  </ListView>
+
+    </StackLayout>
+</ContentPage>
+
