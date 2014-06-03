@@ -3,7 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="AppyLinks.LinkList"
-    Title="Links"
+   	Title="AppyLinks"
     >
     <StackLayout Orientation="Vertical">
         <ActivityIndicator x:Name="listFetchingActivity" IsRunning="false" IsVisible="false"></ActivityIndicator>
@@ -13,12 +13,7 @@
 
 	    <ListView.ItemTemplate>
 	      <DataTemplate>
-
-	         
 	          	<TextCell Text="{Binding Title}" />
-
-	         
-
 	      </DataTemplate>
 	    </ListView.ItemTemplate>
 	  </ListView>
