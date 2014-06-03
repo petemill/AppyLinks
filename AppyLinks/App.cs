@@ -9,12 +9,16 @@ namespace AppyLinks
 		{	
 			//whilst testing reset authentication token every time we start up
 			DependencyService.Get<IUserSettingsStore> ().GithubAuthorizationToken = "";
-			
-			return new NavigationPage(new LinkList ())
+
+			return new AppyLinksNavigationPage(new LinkList ())
 			{
 
 			};
 		}
+	}
+
+	public class AppyLinksNavigationPage : NavigationPage {
+		public AppyLinksNavigationPage(Page root) : base(root) { }
 	}
 
 	public static partial class Secrets
